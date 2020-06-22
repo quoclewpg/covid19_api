@@ -12,7 +12,7 @@ const getDate = (request, response) => {
       throw error
     }
     response.setHeader('Content-Type', 'application/json');
-    response.end(JSON.stringify(results.rows));
+    response.status(200).end(JSON.stringify(results.rows));
   })
 }
 
@@ -22,7 +22,7 @@ const getNumberOfCases = (request, response) => {
       throw error
     }
     response.setHeader('Content-Type', 'application/json');
-    response.end(JSON.stringify(results.rows));
+    response.status(200).end(JSON.stringify(results.rows));
   })
 }
 
@@ -32,7 +32,7 @@ const getID = (request, response) => {
       throw error
     }
     response.setHeader('Content-Type', 'application/json');
-    response.send(JSON.stringify(results.rows));
+    response.status(200).end(JSON.stringify(results.rows));
   })
 }
 
@@ -42,7 +42,7 @@ const getAll = (request, response) => {
       throw error
     }
     response.setHeader('Content-Type', 'application/json');
-    response.send(JSON.stringify(results.rows));
+    response.status(200).end(JSON.stringify(results.rows));
   })
 }
 
