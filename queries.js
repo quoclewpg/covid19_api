@@ -11,7 +11,8 @@ const getDate = (request, response) => {
     if (error) {
       throw error
     }
-    response.status(200).json(results.rows)
+    res.setHeader('Content-Type', 'application/json');
+    res.end(JSON.stringify(response.status(200).json(results.rows));
   })
 }
 
@@ -20,7 +21,8 @@ const getNumberOfCases = (request, response) => {
     if (error) {
       throw error
     }
-    response.status(200).json(results.rows)
+    res.setHeader('Content-Type', 'application/json');
+    res.end(JSON.stringify(response.status(200).json(results.rows));
   })
 }
 
@@ -29,7 +31,8 @@ const getID = (request, response) => {
     if (error) {
       throw error
     }
-    response.status(200).json(results.rows)
+    res.setHeader('Content-Type', 'application/json');
+    res.end(JSON.stringify(response.status(200).json(results.rows));
   })
 }
 
@@ -38,7 +41,8 @@ const getAll = (request, response) => {
     if (error) {
       throw error
     }
-    response.status(200).json(results.rows)
+    res.setHeader('Content-Type', 'application/json');
+    res.end(JSON.stringify(response.status(200).json(results.rows));
   })
 }
 
