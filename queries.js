@@ -42,7 +42,7 @@ const getAll = (request, response) => {
       throw error
     }
     response.setHeader('Content-Type', 'application/json');
-    response.end(JSON.stringify(response.status(200).json(results.rows)));
+    response.end(JSON.stringify(results.rows));
   })
 }
 
