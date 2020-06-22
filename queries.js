@@ -11,7 +11,7 @@ const getDate = (request, response) => {
     if (error) {
       throw error
     }
-    return response.send(JSON.stringify(results.rows));
+    response.json((results.rows));
   })
 }
 
@@ -20,7 +20,7 @@ const getNumberOfCases = (request, response) => {
     if (error) {
       throw error
     }
-    return response.send(JSON.stringify(results.rows));
+    response.json((results.rows));
   })
 }
 
@@ -29,7 +29,7 @@ const getID = (request, response) => {
     if (error) {
       throw error
     }
-    return response.send(JSON.stringify(results.rows));
+    response.json((results.rows));
   })
 }
 
@@ -38,7 +38,7 @@ const getAll = (request, response) => {
     if (error) {
       throw error
     }
-    return response.send(JSON.stringify(results.rows));
+    response.json((results.rows));
   })
 }
 
