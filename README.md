@@ -17,6 +17,10 @@ This project is created with:
 ## Description
 * Backend:
     > Using NodeJs and Express to write an API to return JSON results.
+    >> https://covid19manitobaapi.herokuapp.com/ with no parameter that shows all the updated cases which are being retrieved from a database under a JSON format.
+    >> https://covid19manitobaapi.herokuapp.com/dates with [dates] parameter that shows all the dates under JSON format.
+    >> https://covid19manitobaapi.herokuapp.com/cases with [cases] parameter that shows all the cases under JSON format.
+    >> https://covid19manitobaapi.herokuapp.com/id with [id] parameter that shows all the id (number of days of these reported cases) under JSON format.
 * Frontend:
     > Simple responsive bootstrap and CSS to display data in the table.
 * Heroku:
