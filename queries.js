@@ -7,7 +7,7 @@ const pool = new Pool({
   }
 })
 const getDate = (request, response) => {
-  pool.query('SELECT date FROM covid19_scraping_data_table', (error, results) => {
+  pool.query('SELECT date FROM covid19_scraping_data_table ORDER BY Id', (error, results) => {
     if (error) {
       throw error
     }
@@ -16,7 +16,7 @@ const getDate = (request, response) => {
 }
 
 const getNumberOfCases = (request, response) => {
-  pool.query('SELECT cases FROM covid19_scraping_data_table', (error, results) => {
+  pool.query('SELECT cases FROM covid19_scraping_data_table ORDER BY Id', (error, results) => {
     if (error) {
       throw error
     }
@@ -25,7 +25,7 @@ const getNumberOfCases = (request, response) => {
 }
 
 const getID = (request, response) => {
-  pool.query('SELECT id FROM covid19_scraping_data_table', (error, results) => {
+  pool.query('SELECT id FROM covid19_scraping_data_table ORDER BY Id', (error, results) => {
     if (error) {
       throw error
     }
@@ -34,7 +34,7 @@ const getID = (request, response) => {
 }
 
 const getAll = (request, response) => {
-  pool.query('SELECT * FROM covid19_scraping_data_table', (error, results) => {
+  pool.query('SELECT * FROM covid19_scraping_data_table ORDER BY Id', (error, results) => {
     if (error) {
       throw error
     }
